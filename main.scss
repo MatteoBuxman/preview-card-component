@@ -2,8 +2,15 @@ $bg-color: #0D192C;
 $card-color: #15263F;
 $paragraph-color: #8BACD9;
 
+@font-face {
+    font-family: "Outfit";
+    src: url(fonts/Outfit/Outfit.ttf) format("truetype");
+    font-display: fallback;
+}
+
 body {
     background-color: $bg-color;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
 
 .card {
