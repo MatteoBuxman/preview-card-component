@@ -1,0 +1,12 @@
+$bg-color: #0D192C;
+$card-color: #15263F;
+$paragraph-color: #8BACD9;
+
+body {
+    background-color: $bg-color;
+}
+
+.card {
+    background-color: $card-color;
+    color: $paragraph-color;
+}
