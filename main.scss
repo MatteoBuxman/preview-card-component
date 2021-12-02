@@ -9,4 +9,18 @@ body {
 .card {
     background-color: $card-color;
     color: $paragraph-color;
+
+    .card-image {
+        img {
+            width: 100%;
+        }
+    }
+    
+    .card-creator {
+        img {
+            width: 33px;
+            height: 33px;
+        }
+    }
 }
+
