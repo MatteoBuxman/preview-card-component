@@ -9,8 +9,20 @@ body {
 }
 
 .card {
+  max-width: 350px;
+  max-height: 596px;
+  width: 75%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   background-color: #15263F;
   color: #8BACD9;
+  padding: 25px;
+  border-radius: 15px;
 }
 .card .card-image img {
   width: 100%;
