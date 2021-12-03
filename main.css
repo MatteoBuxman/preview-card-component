@@ -30,6 +30,10 @@ body {
 .card a {
   color: #FFFFFF;
   text-decoration: none;
+  transition: 1s ease;
+}
+.card a:hover {
+  color: #00FFF8;
 }
 .card .card-content {
   display: flex;

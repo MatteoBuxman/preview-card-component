@@ -39,7 +39,13 @@ body {
     a {
         color: $secondary-color;
         text-decoration: none;
+        transition: 1s ease;
     }
+
+    a:hover {
+        color: $highlight-color;
+    }
+
     .card-content {
 
         display: flex;
@@ -98,7 +104,7 @@ body {
         border-top: 1px solid $line-color;
         padding: 10px 0px 0px 0px;
         font-size: 15px;
-        
+
 
         img {
             width: 33px;
