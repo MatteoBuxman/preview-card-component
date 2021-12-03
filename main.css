@@ -27,6 +27,10 @@ body {
   display: flex;
   flex-direction: row;
 }
+.card a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 .card .card-content {
   display: flex;
   flex-direction: column;
