@@ -6,13 +6,14 @@
 body {
   background-color: #0D192C;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 .card {
   max-width: 350px;
   max-height: 596px;
   width: 75%;
-  height: 80%;
+  height: 75%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -23,13 +24,59 @@ body {
   color: #8BACD9;
   padding: 25px;
   border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
 }
 .card .card-image img {
   width: 100%;
 }
+.card .card-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.card .card-details h1 {
+  font-size: 22px;
+}
+.card .card-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.card .card-eth,
+.card .card-clock {
+  display: flex;
+  align-items: center;
+}
+.card .card-eth .card-eth-text,
+.card .card-eth .card-clock-text,
+.card .card-clock .card-eth-text,
+.card .card-clock .card-clock-text {
+  margin-left: 5px;
+}
+.card .card-eth .card-eth-text {
+  font-weight: bold;
+  color: #00FFF8;
+}
+.card .card-creator {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #2E405A;
+  padding: 10px 0px 0px 0px;
+  font-size: 15px;
+}
 .card .card-creator img {
   width: 33px;
   height: 33px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  margin-right: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
