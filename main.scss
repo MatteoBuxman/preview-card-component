@@ -1,6 +1,9 @@
 $bg-color: #0D192C;
 $card-color: #15263F;
-$paragraph-color: #8BACD9;
+$primary-color: #8BACD9;
+$secondary-color: #FFFFFF;
+$highlight-color: #00FFF8;
+$line-color: #2E405A;
 
 @font-face {
     font-family: "Outfit";
@@ -11,23 +14,95 @@ $paragraph-color: #8BACD9;
 body {
     background-color: $bg-color;
     font-family: "Outfit", Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 .card {
+    max-width: 350px;
+    max-height: 596px;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     background-color: $card-color;
-    color: $paragraph-color;
+    color: $primary-color;
+    padding: 25px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+
+    .card-content {
+
+        display: flex;
+        flex-direction: column;
+
+    }
 
     .card-image {
         img {
             width: 100%;
         }
     }
-    
+
+    .card-text {
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+
+    }
+
+    .card-details h1 {
+
+        font-size: 22px;
+    }
+
+    .card-stats {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .card-eth,
+    .card-clock {
+        display: flex;
+        align-items: center;
+
+        .card-eth-text,
+        .card-clock-text {
+            margin-left: 5px;
+        }
+    }
+
+    .card-eth {
+        .card-eth-text {
+            font-weight: bold;
+            color: $highlight-color;
+        }
+    }
+
     .card-creator {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $line-color;
+        padding: 10px 0px 0px 0px;
+        font-size: 15px;
+        
+
         img {
             width: 33px;
             height: 33px;
+            border: 1px solid $secondary-color;
+            border-radius: 100%;
+            margin-right: 16px;
         }
+
     }
 }
-
