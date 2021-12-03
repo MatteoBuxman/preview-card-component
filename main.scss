@@ -36,6 +36,10 @@ body {
     display: flex;
     flex-direction: row;
 
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+    }
     .card-content {
 
         display: flex;
