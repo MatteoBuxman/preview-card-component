@@ -11,6 +11,9 @@ $line-color: #2E405A;
     font-display: fallback;
 }
 
+.attribution { font-size: 11px; text-align: center; color: $secondary-color }
+.attribution a { color: $highlight-color; }
+
 body {
     background-color: $bg-color;
     font-family: "Outfit", Arial, Helvetica, sans-serif;
