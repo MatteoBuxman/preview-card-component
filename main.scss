@@ -54,8 +54,36 @@ body {
     }
 
     .card-image {
-        img {
+        position: relative;
+        background-color: $highlight-color;
+       
+
+        .view-icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            opacity: 0;
+        }
+
+        .equilibirium-image {
             width: 100%;
+            height: 100%;
+            transition: 1s ease;
+        }
+        
+    }
+
+    .card-image:hover {
+        transition: 1s ease;
+        .equilibirium-image {
+            opacity: 0.3;
+            filter: grayscale(1);
+        }
+        .view-icon {
+            opacity: 1;
         }
     }
 
